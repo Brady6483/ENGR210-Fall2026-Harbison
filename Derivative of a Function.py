@@ -23,6 +23,11 @@ for h in stepsizes:
     error = abs(calculated - actual)
     error_list.append(error)
 plt.figure(figsize=(10, 5))
+'''
+JZB Comment:
+Code looks good. Update the graph to show the individual points by adding 'o' in the plt.plot command.
+FYI: The machine precision limit that you're seeing at 10^-6 is described in more detail here: https://math.stackexchange.com/questions/815113/is-there-a-general-formula-for-estimating-the-step-size-h-in-numerical-different
+'''
 plt.plot(stepsizes, error_list)
 plt.xscale("log")
 plt.yscale("log")

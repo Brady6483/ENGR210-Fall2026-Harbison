@@ -1,5 +1,5 @@
 import numpy as np
-filename = 'ENGR210 Fa2026 HW04 Prob2 Data(in).csv'
+filename = r'C:\Users\chunk\OneDrive\Desktop\ENGR210 Fa2026 HW04 Prob2 Data(in).csv'
 data = np.loadtxt(filename, delimiter=',', skiprows=1)
 strain = data[:, 0]
 stress = data[:, 1]
